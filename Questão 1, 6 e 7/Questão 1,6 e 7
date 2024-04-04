@@ -1,0 +1,119 @@
+	
+
+Questão 1 - Considere o seguinte algoritmo Qual o resultado do conteúdo do vetor “vetor”, após a execução do algoritmo? Escreva o passo a passo.
+
+R   int vetor[10] = {0,1,2,3,4,5,6,7,8,9}
+    var i = 0
+    if i < 10 Faça
+	    Inteiro temp = vetor[i]
+	    vetor[i] = vetor[9-i]
+	    vetor[9-i] = temp
+	    i = i + 1
+    Fim enquanto
+
+
+    	i=0
+	    Int temp = vetor[0]=0
+	    temp =0
+	    vetor[0] = vetor[9-0]=9
+	    vetor[9-0] = temp
+	    i+=1 = 1
+	    	              0 1 2 3 4 5 6 7 8 9
+	    vetor novo[10] = {9,1,2,3,4,5,6,7,8,0}
+
+    	i=1
+	    Int temp = vetor[1]=1
+	    temp =1
+	    vetor[1] = vetor[9-1]=8
+	    vetor[9-1] = temp
+	    i+=1 = 2
+	    	              0 1 2 3 4 5 6 7 8 9
+	    vetor novo[10] = {9,8,2,3,4,5,6,7,1,0}
+
+    	i=2
+	    Int temp = vetor[2]=2
+	    temp =2
+	    vetor[2] = vetor[9-2]=7
+	    vetor[9-2] = temp
+	    i+=1 = 3
+	    	              0 1 2 3 4 5 6 7 8 9
+	    vetor novo[10] = {9,8,7,3,4,5,6,2,1,0}
+
+    	i=3
+	    Int temp = vetor[3]=3
+	    temp =3
+	    vetor[3] = vetor[9-3]=6
+	    vetor[9-3] = temp
+	    i+=1 = 4
+	                      0 1 2 3 4 5 6 7 8 9
+	    vetor novo[10] = {9,8,7,6,4,5,3,2,1,0}
+
+    	i=4
+	    Int temp = vetor[4]=4
+	    temp =4
+	    vetor[4] = vetor[9-4]=5
+	    vetor[9-4] = temp
+	    i+=1 = 5
+	                      0 1 2 3 4 5 6 7 8 9
+	    vetor novo[10] = {9,8,7,6,5,4,3,2,1,0}
+
+       	i=5
+	    Int temp = vetor[5]=4
+	    temp =4
+	    vetor[5] = vetor[9-5]=5
+	    vetor[9-5] = temp
+	    i+=1 = 6
+	                      0 1 2 3 4 5 6 7 8 9
+	    vetor novo[10] = {9,8,7,6,4,5,3,2,1,0}
+
+       	i=6
+	    Int temp = vetor[6]=3
+	    temp =3
+	    vetor[6] = vetor[9-6]=6
+	    vetor[9-6] = temp
+	    i+=1 = 7
+	                      0 1 2 3 4 5 6 7 8 9
+	    vetor novo[10] = {9,8,7,3,4,5,6,2,1,0}
+
+       	i=7
+	    Int temp = vetor[7]=2
+	    temp =2
+	    vetor[7] = vetor[9-7]=7
+	    vetor[9-7] = temp
+	    i+=1 = 8
+	                      0 1 2 3 4 5 6 7 8 9
+	    vetor novo[10] = {9,8,2,3,4,5,6,7,1,0}
+
+       	i=8
+	    Int temp = vetor[8]=1
+	    temp =1
+	    vetor[8] = vetor[9-8]=8
+	    vetor[9-8] = temp
+	    i+=1 = 9
+	                      0 1 2 3 4 5 6 7 8 9
+	    vetor novo[10] = {9,1,2,3,4,5,6,7,8,0}
+
+       	i=9
+	    Int temp = vetor[9]=0
+	    temp =0
+	    vetor[9] = vetor[9-9]=9
+	    vetor[9-9] = temp
+	    i+=1 = 10
+	                      0 1 2 3 4 5 6 7 8 9
+	    vetor novo[10] = {0,1,2,3,4,5,6,7,8,9}
+
+
+	Questão 06 - Você está implementando um sistema operacional e precisa gerenciar a ordem de execução de processos e threads. Qual estrutura de dados seria mais adequada? 
+Explique resumidamente esta estrutura.
+
+R. A estrutura mais adequada seria a fila. Uma fila e uma estrutura de dados que segue o First in, First out(FIFO), onde o primeiro a entra e o primeiro que vai sair.
+Exemplo: Uma fila de supermercado o primeiro a entrar na fila e o primeiro a ser atendido, então o primeiro processo a entra na fila sera o primeiro a ser procesado e os subseguentes ficarão atras dele na ordem de chegada.
+
+
+
+	Questão 07 - Você está implementando uma função em seu sistema que ao ser executada desfaz ou refaz a última ação tomada . Qual estrutura de dados seria mais adequada?
+Explique resumidamente esta estrutura.
+
+R. A estrutura mais adequada seria a pilha. A pilha e uma estrutura de dados que seque o Last in, First out(LIFO), que significa que o primeiro que entra e o ultimo que sai.
+Exemplo: uma pilha de livros quando um livro e colocado na pilha se o usuario deseja desfazer essa ação, basta remover o livro no topo da pilha já se o usuario deseja refazer a ação que desfes basta colocar denovo o livro no topo da pilha
+
