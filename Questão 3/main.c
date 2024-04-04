@@ -28,7 +28,7 @@ int main() {
 	 printf("Inserir a linha e a coluna dando um espaco entre elas  %c :", j1);
         scanf("%d %d", &l, &c);
         
-        if (tabuleiro[l-1][c-1]==' '){
+        	if (tabuleiro[l-1][c-1]==' '){
         	tabuleiro[l-1][c-1] = j1;
         	;
 		};
@@ -36,27 +36,26 @@ int main() {
 		imprimirTabuleiro(tabuleiro);
 		
 		
-			 printf("Inserir a linha e a coluna dando um espaco entre elas  %c :", j2);
-        scanf("%d %d", &l, &c);
+		printf("Inserir a linha e a coluna dando um espaco entre elas  %c :", j2);
+		scanf("%d %d", &l, &c);
         
-        if (tabuleiro[l-1][c-1]==' '){
+        	if (tabuleiro[l-1][c-1]==' '){
         	tabuleiro[l-1][c-1] = j2;
         	;
         	
 		}
-			else{
-				printf(" Lugar oculpado \nInserir a linha e a coluna dando um espaco entre elas  %c :", j2);
-        	scanf("%d %d", &l, &c);
+		else{
+			printf(" Lugar oculpado \nInserir a linha e a coluna dando um espaco entre elas  %c :", j2);
+        		scanf("%d %d", &l, &c);
         
-        	if (tabuleiro[l-1][c-1]==' '){
+        		if (tabuleiro[l-1][c-1]==' '){
         		tabuleiro[l-1][c-1] = j2;
         		;
 			};
-			}
+		}
 		imprimirTabuleiro(tabuleiro);
 		m = m+2
 		;
 	};
-	return 0;
-	
+return 0;
 }
